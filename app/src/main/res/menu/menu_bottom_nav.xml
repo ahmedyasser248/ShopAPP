@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashBoardFragment"
+        android:icon="@drawable/ic_vector_dashboard"
+        android:title="@string/menu_dashboard" />
+    <item
+        android:id="@+id/productsFragment"
+        android:icon="@drawable/ic_vector_products"
+        android:title="@string/menu_products" />
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_vector_orders"
+        android:title="@string/menu_orders" />
+</menu>

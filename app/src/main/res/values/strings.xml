@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">ShopAPP</string>
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="et_hint_email_id">Email ID</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">
+<u>Register</u>
+</string>
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_first_name">First name</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_and_condition">
+I Agree To The
+<u> Terms &amp; Conditions </u>
+</string>
+    <string name="forget_the_first_name">Enter first name</string>
+    <string name="forget_the_last_name">Enter last name</string>
+    <string name="forget_the_email">Enter the email</string>
+    <string name="forget_the_password">Enter the password</string>
+    <string name="forget_the_conf_message">Enter the confirmation message</string>
+    <string name="password_conf_not_match">Check password  and confirmation</string>
+    <string name="forget_check_conditions_and_terms">Check the box</string>
+    <string name="valid_data">register completed successfully</string>
+    <string name="register_completed">register is done</string>
+    <string name="error_occurred">error occurred during authentication</string>
+    <string name="btn_lbl_register">Register</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">
+    <u>Login</u>
+    </string>
+    <string name="please_wait">please wait</string>
+    <string name="title_forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password_title_description">Enter your username and e-mail address we\'ll send you a email to reset your password</string>
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="email_sent_success">Email sent successfully to reset your password!</string>
+    <string name="register_success">register success</string>
+    <string name="register_failed">register failed</string>
+    <string name="title_complete_profile">Complete profile</string>
+    <string name="et_hint_mobile_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">Save</string>
+    <string name="read_storage_permission_denied">permission for data denied</string>
+    <string name="image_selection_failed">image selection failed</string>
+    <string name="please_click_back_again">please click back again to exit</string>
+    <string name="menu_dashboard">dashboard</string>
+    <string name="menu_products">products</string>
+    <string name="menu_orders">orders</string>
+    <string name="settings_title_menu">Settings</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+    <string name="title_settings">Settings</string>
+    <string name="btn_lbl_logout">Log out</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="add_item_menu">add menu Item</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_add_product">add product</string>
+    <string name="et_hint_product_quantity">product quantity</string>
+    <string name="et_hint_product_description">product description</string>
+    <string name="et_hint_product_price">product price</string>
+    <string name="et_hint_product_title">product title</string>
+    <string name="err_msg_select_product_image">select an image for product</string>
+    <string name="err_msg_enter_product_title">enter product title</string>
+    <string name="err_msg_enter_product_price">enter product price</string>
+    <string name="err_msg_enter_product_description">enter product description</string>
+    <string name="err_msg_enter_product_quantity">enter product quantity</string>
+</resources>
