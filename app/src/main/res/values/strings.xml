@@ -70,4 +70,6 @@ I Agree To The
     <string name="err_msg_enter_product_price">enter product price</string>
     <string name="err_msg_enter_product_description">enter product description</string>
     <string name="err_msg_enter_product_quantity">enter product quantity</string>
+    <string name="product_uploaded_success_message">uploaded success</string>
+    <string name="no_products_added_yet">No products added yet</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.shopapp.activities
 
 import android.app.Activity
 import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -18,6 +19,7 @@ import com.example.shopapp.FireStore.FirestoreClass
 import com.example.shopapp.R
 import com.example.shopapp.UIelements.Constants
 import com.example.shopapp.UIelements.GlideLoader
+import com.example.shopapp.models.Product
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_add_product.*
 import kotlinx.android.synthetic.main.dialog_progress.*
@@ -28,6 +30,7 @@ import java.util.jar.Manifest
 
 class AddProductActivity : AppCompatActivity() ,View.OnClickListener{
    private var mSelectedImageFileURI: Uri? = null
+    private var mProductImageURL : String = ""
     private lateinit var mProgressDialog: Dialog
     override fun onClick(v: View?) {
         if(v != null){
@@ -150,8 +153,27 @@ class AddProductActivity : AppCompatActivity() ,View.OnClickListener{
         showProgressDialog(resources.getString(R.string.please_wait))
         FirestoreClass().uploadImageToCloudStorage(this, mSelectedImageFileURI, Constants.PRODUCT_IMAGE)
     }
-    fun imageUploadSuccess(imageURL : String){
+    fun productUploadSuccess(){
         hideDialog()
+        Toast.makeText(this@AddProductActivity,resources.getString(R.string.product_uploaded_success_message),Toast.LENGTH_SHORT)
+            .show()
+        finish()
+    }
+    fun imageUploadSuccess(imageURL : String){
+        //hideDialog()
+        mProductImageURL = imageURL
+        uploadProductDetails()
+    }
+    private fun uploadProductDetails(){
+        val username = this.getSharedPreferences(Constants.SHOPAPP_PREFERCENCES,Context.MODE_PRIVATE)
+            .getString(Constants.LOGGED_IN_USERNAME,"")!!
+        val product = Product(FirestoreClass().getCurrentUserID(),username,et_product_title.text.toString().trim{ it <= ' '},
+        et_product_price.text.toString().trim { it <= ' ' },
+        et_product_description.text.toString().trim{ it <= ' ' },
+        et_product_quantity.text.toString().trim { it <= ' ' },
+        mProductImageURL)
+
+        FirestoreClass().uploadProductDetails(this,product)
     }
 
     fun showProgressDialog(text : String){

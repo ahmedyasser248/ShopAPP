@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
 object Constants {
+
     const val USERS : String = "users"
+    const val PRODUCTS : String ="products"
     const val SHOPAPP_PREFERCENCES : String = "ShopAppPrefs"
     const val LOGGED_IN_USERNAME : String = "logged_in_username"
     const val EXTRA_USER_DETAILS :String = "extra_user_details"
@@ -23,6 +25,7 @@ object Constants {
     const val IMAGE : String = "image"
     const val COMPLETE_PROFILE :String = "profileCompleted"
     const val PRODUCT_IMAGE : String = "Product_Image"
+    const val USER_ID :String= "user_id"
     fun showImageChooser(fragment: Fragment){
         Log.i("in constants ", " i made it to here")
         val galleryIntent = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
