@@ -1,4 +1,4 @@
-package com.example.shopapp.UIelements
+package com.example.shopapp.utils
 
 import android.content.Intent
 import android.net.Uri
@@ -26,6 +26,7 @@ object Constants {
     const val COMPLETE_PROFILE :String = "profileCompleted"
     const val PRODUCT_IMAGE : String = "Product_Image"
     const val USER_ID :String= "user_id"
+    const val EXTRA_PRODUCT_ID : String = "extra_product_id"
     fun showImageChooser(fragment: Fragment){
         Log.i("in constants ", " i made it to here")
         val galleryIntent = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)

@@ -58,7 +58,7 @@ I Agree To The
     <string name="lbl_addresses">Addresses</string>
     <string name="lbl_edit">Edit</string>
     <string name="add_item_menu">add menu Item</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_add_product">add product</string>
     <string name="et_hint_product_quantity">product quantity</string>
@@ -72,4 +72,26 @@ I Agree To The
     <string name="err_msg_enter_product_quantity">enter product quantity</string>
     <string name="product_uploaded_success_message">uploaded success</string>
     <string name="no_products_added_yet">No products added yet</string>
+    <string name="no_dashboard_products">no dashboard items added</string>
+    <string name="delete_dialog_title">DELETE</string>
+    <string name="delete_dialog_message">are you sure you want to delete it ?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="title_product_details">PRODUCT DETAILS</string>
+    <string name="lbl_product_description">Product Description</string>
+    <string name="lbl_product_details_stock_quantity">Stock Quantity</string>
+    <string name="btn_lbl_add_to_cart">ADD TO CART</string>
+    <string name="success_message_item_added_to_cart">Product is added to your cart.</string>
+    <string name="btn_lbl_go_to_cart">GO TO CART</string>
+    <string name="title_my_cart">MY CART</string>
+    <string name="no_cart_item_found">No item found in cart!</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_shipping_charge">Shipping Charge</string>
+    <string name="lbl_total_amount">Total Amount</string>
+    <string name="btn_lbl_checkout">Checkout</string>
+    <string name="action_cart">My Cart</string>
+    <string name="lbl_out_of_stock">OUT OF STOCK</string>
+    <string name="msg_item_removed_successfully">Item removed successfully.</string>
+    <string name="msg_for_available_stock">Available stock is %1$s!. You can not add more than stock quantity.</string>
+
 </resources>

@@ -7,14 +7,12 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.shopapp.activities.SettingsActivity
-import com.example.shopapp.UIelements.Constants
+import com.example.shopapp.utils.Constants
 import com.example.shopapp.activities.AddProductActivity
+import com.example.shopapp.activities.ProductDetailsActivity
 import com.example.shopapp.models.Product
 import com.example.shopapp.models.User
-import com.example.shopapp.theFragments.LoginFragment
-import com.example.shopapp.theFragments.ProductsFragment
-import com.example.shopapp.theFragments.RegisterFragment
-import com.example.shopapp.theFragments.UserProfileFragment
+import com.example.shopapp.theFragments.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
@@ -219,6 +217,50 @@ class FirestoreClass {
                         fragment.successProductsListFromFireStore(productList)
                     }
                 }
+            }
+    }
+    fun getDashboardItemList(fragment : DashBoardFragment){
+        mFireStore.collection(Constants.PRODUCTS)
+            .get()
+            .addOnSuccessListener {
+                document ->
+                Log.e(fragment.javaClass.simpleName,document.documents.toString())
+                val productsList : ArrayList<Product> = ArrayList()
+                for( i in document.documents ){
+                    val product = i.toObject(Product::class.java)!!
+                    product.product_id=i.id
+                    productsList.add(product)
+
+                }
+                fragment.successDashboardItemList(productsList)
+            }.addOnFailureListener {
+                e ->
+                fragment.hideDialog()
+                Log.e(fragment.javaClass.simpleName,"Error while getting dashboard items list")
+            }
+    }
+    fun deleteProduct(fragment: ProductsFragment , productID:String){
+        mFireStore.collection(Constants.PRODUCTS)
+            .document(productID)
+            .delete()
+            .addOnSuccessListener {
+                fragment.productDeleteSuccess()
+            }.addOnFailureListener {
+                fragment.hideDialog()
+            }
+    }
+    fun getProductDetails(activity : ProductDetailsActivity,productID: String){
+        mFireStore.collection(Constants.PRODUCTS)
+            .document(productID)
+            .get()
+            .addOnSuccessListener {
+                document ->
+                val product = document.toObject(Product::class.java)
+                if (product != null) {
+                    activity.productDetailsSuccess(product)
+                }
+            }.addOnFailureListener {
+                activity.hideDialog()
             }
     }
 }

@@ -8,10 +8,8 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.shopapp.R
-import com.example.shopapp.UIelements.Constants
+import com.example.shopapp.utils.Constants
 import com.example.shopapp.models.User
-import kotlinx.android.synthetic.main.after_login_fragment.*
-import kotlinx.android.synthetic.main.user_profile_fragment.*
 
 class AfterLoginFragment : Fragment(R.layout.after_login_fragment) {
     lateinit var userName : String

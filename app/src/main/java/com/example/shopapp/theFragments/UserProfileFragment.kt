@@ -18,15 +18,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.shopapp.FireStore.FirestoreClass
 import com.example.shopapp.R
-import com.example.shopapp.UIelements.Constants
-import com.example.shopapp.UIelements.GlideLoader
+import com.example.shopapp.utils.Constants
+import com.example.shopapp.utils.GlideLoader
 import com.example.shopapp.models.User
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.after_login_fragment.*
 import kotlinx.android.synthetic.main.dialog_progress.*
 import kotlinx.android.synthetic.main.user_profile_fragment.*
 import java.io.IOException
-import java.util.jar.Manifest
 
 class UserProfileFragment:Fragment(R.layout.user_profile_fragment),View.OnClickListener {
     lateinit var mProgressDialog : Dialog

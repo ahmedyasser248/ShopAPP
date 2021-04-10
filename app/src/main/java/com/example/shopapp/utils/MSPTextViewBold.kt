@@ -1,11 +1,9 @@
-package com.example.shopapp.UIelements
+package com.example.shopapp.utils
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatTextView
-import java.text.AttributedCharacterIterator
 
 class MSPTextViewBold(context: Context , attrs : AttributeSet) : AppCompatTextView(context,attrs) {
 

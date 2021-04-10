@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.shopapp.FireStore.FirestoreClass
 import com.example.shopapp.R
-import com.example.shopapp.UIelements.GlideLoader
+import com.example.shopapp.utils.GlideLoader
 import com.example.shopapp.models.User
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_settings.*

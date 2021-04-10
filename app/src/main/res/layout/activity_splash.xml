@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.SplashActivity">
 
-    <com.example.shopapp.UIelements.MSPTextViewBold
+    <com.example.shopapp.utils.MSPTextViewBold
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/splash_title_text_size"

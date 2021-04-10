@@ -82,7 +82,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fl_product_image">
 
-                <com.example.shopapp.UIelements.MSPEditText
+                <com.example.shopapp.utils.MSPEditText
                     android:id="@+id/et_product_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_title">
 
-                <com.example.shopapp.UIelements.MSPEditText
+                <com.example.shopapp.utils.MSPEditText
                     android:id="@+id/et_product_price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_price">
 
-                <com.example.shopapp.UIelements.MSPEditText
+                <com.example.shopapp.utils.MSPEditText
                     android:id="@+id/et_product_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_product_description">
 
-                <com.example.shopapp.UIelements.MSPEditText
+                <com.example.shopapp.utils.MSPEditText
                     android:id="@+id/et_product_quantity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                     android:textSize="@dimen/et_textSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.example.shopapp.UIelements.MSPButton
+            <com.example.shopapp.utils.MSPButton
                 android:id="@+id/btn_submit_add_product"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

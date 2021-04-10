@@ -1,4 +1,4 @@
-package com.example.shopapp.UIelements
+package com.example.shopapp.utils
 
 import android.content.Context
 import android.graphics.Typeface

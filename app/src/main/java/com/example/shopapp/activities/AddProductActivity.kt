@@ -8,7 +8,6 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.SyncStateContract
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
@@ -17,16 +16,13 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.shopapp.FireStore.FirestoreClass
 import com.example.shopapp.R
-import com.example.shopapp.UIelements.Constants
-import com.example.shopapp.UIelements.GlideLoader
+import com.example.shopapp.utils.Constants
+import com.example.shopapp.utils.GlideLoader
 import com.example.shopapp.models.Product
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_add_product.*
 import kotlinx.android.synthetic.main.dialog_progress.*
-import kotlinx.android.synthetic.main.user_profile_fragment.*
-import java.io.IOException
 import java.lang.Exception
-import java.util.jar.Manifest
 
 class AddProductActivity : AppCompatActivity() ,View.OnClickListener{
    private var mSelectedImageFileURI: Uri? = null
